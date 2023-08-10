@@ -446,6 +446,7 @@ export default {
 			CourseDataService.getAll(this.page, this.pageSize)
 				.then((response) => {
 					this.items = response.data;
+					console.log(`items=${JSON.stringify(this.items)}`);
 				})
 				// 실패하면 에러 출력
 				.catch((e) => {
